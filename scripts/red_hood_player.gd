@@ -18,10 +18,15 @@ func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("ui_left", "ui_right")
 	
-	if direction == 0:
-		animated_sprite_2d.play("idle")
+	if is_on_floor():
+		if direction == 0:
+			animated_sprite_2d.play("idle")
+		else:
+			animated_sprite_2d.play("running")
 	else:
-		animated_sprite_2d.play("running")
+		animated_sprite_2d.play("jumping")
+	
+	
 	
 	# Flipping sprite based on direction
 	if direction > 0:
