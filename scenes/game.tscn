@@ -11,11 +11,12 @@ z_index = 2
 position = Vector2(0, 36)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1203174569]
-position = Vector2(0, -24)
+position = Vector2(0, -29)
 zoom = Vector2(4, 4)
 limit_left = -200
+limit_top = -10000010
 limit_right = 200
-limit_bottom = 10000012
+limit_bottom = 10000002
 
 [node name="Platforms" type="Node" parent="." unique_id=558740673]
 
