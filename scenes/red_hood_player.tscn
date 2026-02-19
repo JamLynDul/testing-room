@@ -157,9 +157,9 @@ animations = [{
 "duration": 10.0,
 "texture": SubResource("AtlasTexture_53hiw")
 }],
-"loop": true,
+"loop": false,
 "name": &"falling",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -233,7 +233,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cka0p")
 }],
-"loop": true,
+"loop": false,
 "name": &"jumping_up",
 "speed": 5.0
 }, {
@@ -285,6 +285,8 @@ position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_uhepc")
 animation = &"falling"
 autoplay = "running"
+frame = 2
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1679310995]
 position = Vector2(1, 2)
